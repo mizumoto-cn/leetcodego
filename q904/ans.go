@@ -48,15 +48,21 @@ func totalFruit(fruits []int) int {
 	if len(fruits) == 0 {
 		return 0
 	}
-	// TODO: finish this
-	// head, tail, l, r, ans := 0, 0, fruits[0], fruits[0], 0
-	// for head < len(fruits) {
-	// 	ans = max(ans, tail-head+1)
-	// 	for fruits[tail] == l || fruits[tail] == r {
-	// 		tail++
-	// 	}
-	// }
-
+	ans, head, tail := 0, 0, 0
+	basket := make(map[int]int)
+	for tail < len(fruits) {
+		basket[fruits[tail]]++
+		for len(basket) > 2 {
+			basket[fruits[head]]--
+			if basket[fruits[head]] == 0 {
+				delete(basket, fruits[head])
+			}
+			head++
+		}
+		ans = max(ans, tail-head+1)
+		tail++
+	}
+	return ans
 }
 
 func max(a, b int) int {

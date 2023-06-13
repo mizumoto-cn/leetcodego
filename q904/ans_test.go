@@ -11,14 +11,13 @@ import (
 func TestSolve(t *testing.T) {
 	var cases = []struct {
 		nums   []int
-		target int
-		expect []int
+		expect int
 	}{
-		{[]int{2, 7, 11, 15}, 9, []int{0, 1}},
-		{[]int{3, 2, 4}, 6, []int{1, 2}},
+		{[]int{1, 2, 1}, 3},
+		{[]int{0, 1, 2, 2}, 3},
+		{[]int{1, 2, 3, 2, 2}, 4},
 	}
-
 	for _, c := range cases {
-		assert.Equal(t, c.expect, question.Solve(c.nums, c.target))
+		assert.Equal(t, c.expect, question.Solve(c.nums))
 	}
 }
