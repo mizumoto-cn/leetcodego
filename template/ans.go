@@ -1,5 +1,5 @@
 /**
-a template
+template.
 */
 
 package template
