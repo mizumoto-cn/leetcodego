@@ -36,6 +36,7 @@ a new reposit for go-written leetcode solvation.
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|[Go](./q209/ans.go)|Medium|
+|904|[Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/)|[Go](./q904/ans.go)|Medium|
 
 ### Maths
 
