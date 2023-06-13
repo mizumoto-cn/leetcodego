@@ -39,12 +39,34 @@ Constraints:
 package q904
 
 import (
+	"math"
+
 	"github.com/mizumoto-cn/leetcodego/util"
 )
 
 var _ = new(util.Util)
 
 func totalFruit(fruits []int) int {
+	if len(fruits) == 0 {
+		return 0
+	}
+	ans, head := 0, 0
+	basket := make(map[int]int)
+	for tail := 0; tail < len(fruits); tail++ {
+		basket[fruits[tail]]++
+		for len(basket) > 2 {
+			basket[fruits[head]]--
+			if basket[fruits[head]] == 0 {
+				delete(basket, fruits[head])
+			}
+			head++
+		}
+		ans = int(math.Max(float64(ans), float64(tail-head+1)))
+	}
+	return ans
+}
+
+func totalFruit_prototype(fruits []int) int {
 	if len(fruits) == 0 {
 		return 0
 	}
@@ -73,5 +95,8 @@ func max(a, b int) int {
 }
 
 func Solve(fruits []int) int {
-	return totalFruit(fruits)
+	if len(fruits) == (len(fruits)/2)*2 {
+		return totalFruit(fruits)
+	}
+	return totalFruit_prototype(fruits)
 }
