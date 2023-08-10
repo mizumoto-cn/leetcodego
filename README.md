@@ -37,6 +37,7 @@ a new reposit for go-written leetcode solvation.
 |---| ----- | -------- | ---------- |
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|[Go](./q209/ans.go)|Medium|
 |904|[Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/)|[Go](./q904/ans.go)|Medium|
+| 76| [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | [Go](./q76/ans.go) | Hard |
 
 ### Maths
 
