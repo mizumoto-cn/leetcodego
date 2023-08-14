@@ -27,10 +27,10 @@ Example 2:
 package q26
 
 import (
-	"github.com/mizumoto-cn/leetcodego/util"
+	"github.com/mizumoto-cn/leetcodego/utils"
 )
 
-var _ = new(util.Util)
+var _ = new(utils.Util)
 
 func removeDuplicates(nums []int) int {
 	k := 0

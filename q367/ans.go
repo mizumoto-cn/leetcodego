@@ -18,10 +18,10 @@ Output: false
 package q367
 
 import (
-	"github.com/mizumoto-cn/leetcodego/util"
+	"github.com/mizumoto-cn/leetcodego/utils"
 )
 
-var _ = new(util.Util)
+var _ = new(utils.Util)
 
 func isPerfectSquare(num int) bool {
 	if num < 2 {

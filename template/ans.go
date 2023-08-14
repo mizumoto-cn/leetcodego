@@ -5,10 +5,10 @@ template.
 package template
 
 import (
-	"github.com/mizumoto-cn/leetcodego/util"
+	"github.com/mizumoto-cn/leetcodego/utils"
 )
 
-var _ = new(util.Util)
+var _ = new(utils.Util)
 
 func twoSum(nums []int, target int) []int {
 	m := make(map[int]int)

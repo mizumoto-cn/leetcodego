@@ -8,10 +8,10 @@ const (
 package q{{.Name}}
 	
 import (
-	"github.com/mizumoto-cn/leetcodego/util"
+	"github.com/mizumoto-cn/leetcodego/utils"
 )
 	
-var _ = new(util.Util)
+var _ = new(utils.Util)
 	
 func /* TODO: Write your solution here */ {
 	// TODO: Write your solution here
@@ -27,9 +27,16 @@ import (
 	"testing"
 
 	question "github.com/mizumoto-cn/leetcodego/q{{.Name}}"
+	"github.com/mizuomto-cn/leetcodego/utils"
 
 	assert "github.com/stretchr/testify/assert"
 )
+
+var util utils.Util
+
+func init(){
+	util = utils.NewUtil()
+}
 
 func TestSolve(t *testing.T) {
 	var cases = []struct {

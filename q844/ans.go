@@ -10,10 +10,10 @@ Note that after backspacing an empty text, the text will continue empty.
 package q844
 
 import (
-	"github.com/mizumoto-cn/leetcodego/util"
+	"github.com/mizumoto-cn/leetcodego/utils"
 )
 
-var _ = new(util.Util)
+var _ = new(utils.Util)
 
 func backspaceCompare(s string, t string) bool {
 	var (

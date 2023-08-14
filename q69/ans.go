@@ -19,10 +19,10 @@ Output: 2
 package q69
 
 import (
-	"github.com/mizumoto-cn/leetcodego/util"
+	"github.com/mizumoto-cn/leetcodego/utils"
 )
 
-var _ = new(util.Util)
+var _ = new(utils.Util)
 
 // Newton's method: https://en.wikipedia.org/wiki/Integer_square_root#Algorithm_using_Newton's_method
 // One way of calculating √n and isqrt(n) is to use Heron's method, which is a special case of Newton's method,

@@ -23,10 +23,10 @@ Output: [-1,-1]
 package q34
 
 import (
-	"github.com/mizumoto-cn/leetcodego/util"
+	"github.com/mizumoto-cn/leetcodego/utils"
 )
 
-var _ = new(util.Util)
+var _ = new(utils.Util)
 
 // This may downgrade to O(n) in case of all elements are the same as it will cost O(n) to find the start and end.
 func searchRange(nums []int, target int) []int {

@@ -41,10 +41,10 @@ package q904
 import (
 	"math"
 
-	"github.com/mizumoto-cn/leetcodego/util"
+	"github.com/mizumoto-cn/leetcodego/utils"
 )
 
-var _ = new(util.Util)
+var _ = new(utils.Util)
 
 func totalFruit(fruits []int) int {
 	if len(fruits) == 0 {

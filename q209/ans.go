@@ -24,10 +24,10 @@ Example 3:
 package q209
 
 import (
-	"github.com/mizumoto-cn/leetcodego/util"
+	"github.com/mizumoto-cn/leetcodego/utils"
 )
 
-var _ = new(util.Util)
+var _ = new(utils.Util)
 
 func minSubArrayLen(target int, nums []int) int {
 	var head, tail, sum, min int = 0, 0, 0, len(nums) + 1

@@ -6,10 +6,10 @@ Easy
 package q27
 
 import (
-	"github.com/mizumoto-cn/leetcodego/util"
+	"github.com/mizumoto-cn/leetcodego/utils"
 )
 
-var _ = new(util.Util)
+var _ = new(utils.Util)
 
 func removeElement(nums []int, val int) int {
 	k := 0

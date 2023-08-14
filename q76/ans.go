@@ -27,10 +27,10 @@ Example 3:
 package q76
 
 import (
-	"github.com/mizumoto-cn/leetcodego/util"
+	"github.com/mizumoto-cn/leetcodego/utils"
 )
 
-var _ = new(util.Util)
+var _ = new(utils.Util)
 
 func minWindow(s string, t string) string {
 	if len(s) == 0 || len(t) == 0 || len(s) < len(t) {

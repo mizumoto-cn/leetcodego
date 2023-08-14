@@ -32,10 +32,10 @@ nums contains distinct values sorted in ascending order.
 package q35
 
 import (
-	"github.com/mizumoto-cn/leetcodego/util"
+	"github.com/mizumoto-cn/leetcodego/utils"
 )
 
-var _ = new(util.Util)
+var _ = new(utils.Util)
 
 func searchInsert(nums []int, target int) int {
 	l, r := 0, len(nums)-1
