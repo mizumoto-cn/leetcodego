@@ -45,3 +45,9 @@ a new reposit for go-written leetcode solvation.
 |---| ----- | -------- | ---------- |
 | 69| [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [Go](./q69/ans.go) | Easy |
 |367| [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)|[Go](./q367/ans.go)|Easy|
+
+### Linked List
+
+| # | Title | Solution | Difficulty |
+|---| ----- | -------- | ---------- |
+|203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)|[Go](./q203/ans.go)|Easy|
