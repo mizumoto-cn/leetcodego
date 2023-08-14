@@ -2,6 +2,7 @@ package utils
 
 type Util interface {
 	SliceToLinkedList(slice []int) *ListNode
+	LinkedListToSlice(head *ListNode) []int
 }
 
 type ListNode struct {

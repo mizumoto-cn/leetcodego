@@ -27,6 +27,12 @@ func TestSolve(t *testing.T) {
 	}
 
 	for _, c := range cases {
-		assert.Equal(t, c.expect, question.Solve(c.nums, c.target))
+		assert.Equal(
+			t,
+			c.expect,
+			util.LinkedListToSlice(
+				question.Solve(util.SliceToLinkedList(c.slice), c.val),
+			),
+		)
 	}
 }
