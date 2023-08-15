@@ -27,7 +27,7 @@ import (
 	"testing"
 
 	question "github.com/mizumoto-cn/leetcodego/q{{.Name}}"
-	"github.com/mizuomto-cn/leetcodego/utils"
+	"github.com/mizumoto-cn/leetcodego/utils"
 
 	assert "github.com/stretchr/testify/assert"
 )
