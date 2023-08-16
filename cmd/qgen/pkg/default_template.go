@@ -11,7 +11,11 @@ import (
 	"github.com/mizumoto-cn/leetcodego/utils"
 )
 	
-var u = utils.NewUtil()
+var util utils.Util
+
+func init(){
+	util = utils.NewUtil()
+}
 	
 func /* TODO: Write your solution here */ {
 	// TODO: Write your solution here
