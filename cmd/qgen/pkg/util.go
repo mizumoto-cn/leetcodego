@@ -119,7 +119,7 @@ func generate(ans_t, test_t, target, name string) error {
 		return err
 	}
 	fmt.Printf("Generated %s\n", target_path)
-	fmt.Printf("2 Files Generated:\n- %s,\n- %s\n", ans_path, test_path)
+	fmt.Printf("2 Files Generated:\n- %s\n- %s\n", ans_path, test_path)
 	return nil
 }
 
